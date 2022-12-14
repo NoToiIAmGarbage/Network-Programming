@@ -83,10 +83,11 @@ int main(int argc, char** argv) {
 
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(PORT);
-	if(inet_pton(AF_INET, argv[1], &addr.sin_addr) <= 0) {
-		cout << "\nInvalid address/ Address not supported\n";
-		return 0;
-	}
+	addr.sin_addr.s_addr = inet_addr(argv[1]);
+	// if(inet_pton(AF_INET, argv[1], &addr.sin_addr) <= 0) {
+	// 	cout << "\nInvalid address/ Address not supported\n";
+	// 	return 0;
+	// }
 	addrlen = sizeof(addr);
 	// setup address
 	

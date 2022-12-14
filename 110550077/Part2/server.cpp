@@ -87,6 +87,11 @@ public:
 		}
 		// configure master socket
 
+		addr.sin_family = AF_INET;
+		addr.sin_addr.s_addr = INADDR_ANY;
+		addr.sin_port = htons(PORT);
+		addrlen = sizeof(addr);
+
 		if( bind(master_socket, (struct sockaddr*)&addr, sizeof(addr)) < 0) {
 			cout << "Master socket fail to bind\n";
 		}

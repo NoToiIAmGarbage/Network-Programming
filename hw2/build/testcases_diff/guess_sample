@@ -1,0 +1,27 @@
+*** testcases_correct/guess_sample
+--- build/testcases_your/guess_sample
+***************
+*** 15,25 ****
+  (0) Alice guess '1112' and got '3A0B'
+  (Broadcast to 1) Alice guess '1112' and got '3A0B'
+  (1) Bob guess '1112' and got '3A0B'
+- Game ends, no one wins
+  (Broadcast to 0) Bob guess '1112' and got '3A0B'
+  Game ends, no one wins
+  (0) Game start! Current player is Alice
+! (Broadcast to 1) Game start! Current player is Alice
+  (0) Please enter 4 digit number with leading zero
+  (0) Alice guess '2234' and got '3A0B'
+  (Broadcast to 1) Alice guess '2234' and got '3A0B'
+--- 15,25 ----
+  (0) Alice guess '1112' and got '3A0B'
+  (Broadcast to 1) Alice guess '1112' and got '3A0B'
+  (1) Bob guess '1112' and got '3A0B'
+  (Broadcast to 0) Bob guess '1112' and got '3A0B'
+  Game ends, no one wins
+  (0) Game start! Current player is Alice
+! (Broadcast to 1) Game ends, no one wins
+! Game start! Current player is Alice
+  (0) Please enter 4 digit number with leading zero
+  (0) Alice guess '2234' and got '3A0B'
+  (Broadcast to 1) Alice guess '2234' and got '3A0B'
